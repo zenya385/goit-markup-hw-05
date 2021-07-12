@@ -36,8 +36,8 @@ ul {
 }
 img {
   display: block;
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
 }
 .list {
   display: flex;
@@ -115,6 +115,7 @@ img {
   text-decoration: none;
 }
 .menu-nav .current {
+  position: relative;
   color: var(--accent-color);
 }
 /* .tect.link.current::after {
@@ -128,6 +129,15 @@ img {
   background: var(--accent-color);
   border-radius: 2px;
 } */
+
+/* .tect.link.current::after {
+  content: "";
+  left: 0;
+bottom: -33px;
+width: 100%;height: 2px;
+background-color:red ;
+transition: 0.3ms; */
+
 /* Контакты */
 .header-icon {
   margin-right: 10px;
@@ -743,13 +753,13 @@ img {
 
 /* ------------MODAL--------- */
 
-/* .backdrop {
+.backdrop {
   width: 100%;
   height: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 1);
 }
 
 .modal {
@@ -759,19 +769,27 @@ img {
   top: 221px;
   border-radius: 4px;
   background-color: #ffffff;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 .close-btn {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 90%;
-  bottom: 90%;
+  width: 18px;
+  height: 18px;
+  right: 8px;
+  top: 8px;
   border-radius: 50%;
-  border: 1px solid #0000001a;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
-.backdrop .is-hiden {
-} */
+
+.close-btn-icon {
+  margin-top: 17px;
+  margin-right: 17px;
+}
+.backdrop.is-hiden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}

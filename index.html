@@ -55,7 +55,7 @@
         <!--Герой-->
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+            <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </section>
         <!--Особенности-->
         <section class="section">
@@ -394,9 +394,13 @@
 
     <!-- Вся твоя разметка, включая разметку модалки -->
 
-    <div class="backdrop is-hiden">
+    <div class="backdrop is-hiden" data-modal>
         <div class="modal">
-        <button class="close-btn" type="close-btn">&#10006</button>
+        <button class="close-btn" type="button" data-modal-close>x
+            <svg class="close-btn-icon" width="11" height="11" >
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
         </div>
     </div>
 
