@@ -20,7 +20,7 @@
         <nav class="menu">
             <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
             <ul class="menu-nav list">
-                <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+                <li class="item"><a href="./index.html" class="tect link current">Студия</a></li>
                 <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
                 <li class="item"><a href="" class="link">Контакты</a></li>
             </ul>
@@ -118,12 +118,21 @@
             <ul class="work-list list">
                 <li class="section-work-item">
                     <img src="./images/img1.jpg" alt="картинка програмирование" width="370">
+                    <div class="work-bg">
+                        <p class="work-up-bg">Десктопные приложения</p>
+                    </div>
                 </li>
                 <li class="section-work-item">
                     <img src="./images/img2.jpg" alt="картинка дизайн приложений" width="370">
+                    <div class="work-bg">
+                        <p class="work-up-bg">Мобильные приложения</p>
+                    </div>
                 </li>
                 <li class="section-work-item">
                     <img src="./images/img3.jpg" alt="картинка графический дизайн" width="370">
+                    <div class="work-bg">
+                        <p class="work-up-bg">Дизайнерские решения</p>
+                    </div>
                 </li>
             </ul>
             </div>
@@ -383,5 +392,13 @@
         </div>
     </footer>
 
+    <!-- Вся твоя разметка, включая разметку модалки -->
 
+    <div class="backdrop is-hiden">
+        <div class="modal">
+        <button class="close-btn" type="close-btn">&#10006</button>
+        </div>
+    </div>
+
+<script src="./js/modal.js"></script>
 </body>
