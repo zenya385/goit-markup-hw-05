@@ -545,6 +545,7 @@ transition: 0.3ms; */
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-left: 10px;
+  padding-bottom: 9px;
   color: #ffffff;
 }
 
