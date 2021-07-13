@@ -594,7 +594,7 @@ transition: 0.3ms; */
 
 .footer-address {
   width: 240px;
-  height: 81;
+  /* height: 81px; */
   margin-bottom: 60px;
 }
 
@@ -603,6 +603,7 @@ transition: 0.3ms; */
   flex-direction: column;
   margin-bottom: 9px;
   margin-bottom: 9px;
+  list-style: none;
 }
 
 .item {
